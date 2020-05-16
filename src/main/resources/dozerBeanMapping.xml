@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+    <mapping>
+        <class-a>com.mapper.comparison.model.entity.SimpleEntity</class-a>
+        <class-b>com.mapper.comparison.model.dto.SimpleRecord</class-b>
+        <field>
+            <a>booleanValue</a>
+            <b>success</b>
+        </field>
+        <field>
+            <a>shortValue</a>
+            <b>shortNumber</b>
+        </field>
+        <field>
+            <a>integer</a>
+            <b>intNumber</b>
+        </field>
+        <field>
+            <a>byteValue</a>
+            <b>byteNumber</b>
+        </field>
+    </mapping>
+    <mapping>
+        <class-a>com.mapper.comparison.model.entity.ComplexEntity</class-a>
+        <class-b>com.mapper.comparison.model.dto.ComplexRecord</class-b>
+        <field>
+            <a>simple</a>
+            <b>simpleRecord</b>
+        </field>
+        <field>
+            <a>number</a>
+            <b>doubleValue</b>
+        </field>
+    </mapping>
+    <mapping>
+        <class-a>com.mapper.comparison.model.entity.CollectionElementEntity</class-a>
+        <class-b>com.mapper.comparison.model.dto.CollectionElementRecord</class-b>
+        <field>
+            <a>entity</a>
+            <b>value</b>
+        </field>
+    </mapping>
+</mappings>
